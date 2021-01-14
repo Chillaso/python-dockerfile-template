@@ -3,18 +3,6 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import time
 import requests
 
-KAFKA_BOOTSTRAP_SERVER = os.getenv('KAFKA_BOOTSTRAP_SERVER')
-KAFKA_BOOTSTRAP_PORT = os.getenv('KAFKA_BOOTSTRAP_PORT')
-KAFKA_AUTO_OFFSET = os.getenv('KAFKA_AUTO_OFFSET')
-KAFKA_CONSUMER_TIMEOUT = os.getenv('KAFKA_CONSUMER_TIMEOUT')
-KAFKA_TOPICS = os.getenv('KAFKA_TOPICS')
-
-print(KAFKA_BOOTSTRAP_SERVER)
-print(KAFKA_BOOTSTRAP_PORT)
-print(KAFKA_AUTO_OFFSET)
-print(KAFKA_CONSUMER_TIMEOUT)
-print(KAFKA_TOPICS)
-
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
