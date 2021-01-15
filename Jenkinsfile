@@ -52,6 +52,6 @@ pipeline {
 }
 
 def pythonVersion() {
-    v = sh(returnStdout: true, script: "python3 app.py --version").trim()
+    v = sh(returnStdout: true, script: "python3 --version").trim()
     return v
 }
